@@ -542,7 +542,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .heading-tertiary {
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
   font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
@@ -641,6 +641,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
+.w-\[35\%\] {
+  width: 35%;
+}
+
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
@@ -663,6 +667,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -688,6 +696,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-24 {
   row-gap: 6rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .rounded-\[50\%\] {
@@ -820,8 +832,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
-.leading-4 {
-  line-height: 1rem;
+.leading-\[1\] {
+  line-height: 1;
 }
 
 .leading-\[18px\] {
@@ -834,6 +846,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[1\.6\] {
   line-height: 1.6;
+}
+
+.leading-\[1\.8\] {
+  line-height: 1.8;
 }
 
 .tracking-\[-0\.5px\] {
