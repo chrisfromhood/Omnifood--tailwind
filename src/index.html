@@ -7,6 +7,11 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <title>Omnifood &mdash; Never cook again!</title>
+  <style>
+    html {
+      /* font-size: 62.5%; */
+    }
+  </style>
 </head>
 
 <body class="text-gray font-rubik leading-4 font-normal text-xl">
@@ -17,20 +22,23 @@
     <nav>
       <ul class="list-none flex items-center gap-12">
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg transition" href="#how">How it works</a>
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition" href="#how">How
+            it works</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg transition" href="#meals">Meals</a>
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
+            href="#meals">Meals</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg transition"
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
             href="#testimonials">Testimonials</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg transition" href="#pricing">Pricing</a>
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
+            href="#pricing">Pricing</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg transition" href="#cta">Try for free</a>
+          <a class="btn bg-primary py-3 px-4 text-white font-medium text-lg leading-[18px]" href="#cta">Try for free</a>
         </li>
       </ul>
     </nav>
@@ -50,15 +58,78 @@
             eat healthy again. Tailored to your personal tastes and
             nutritional needs.
           </p>
-          <a class="text-white bg-primary inline-block no-underline text-xl py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all mr-4 hover:bg-secondary"
-            href="#cta">Start eating well</a>
+          <a class="text-white bg-primary btn mr-4 hover:bg-secondary" href="#cta">Start eating well</a>
+          <a class="text-gray bg-white btn focus:outline-none focus:shadow-shad" href=" #how">Learn more ↓</a>
+          <div class="flex items-center mt-20">
+            <div class="flex">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-1.jpg" alt="Customer photo">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-2.jpg" alt="Customer photo">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-3.jpg" alt="Customer photo">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-4.jpg" alt="Customer photo">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-5.jpg" alt="Customer photo">
+              <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
+                src="../img/customers/customer-6.jpg" alt="Customer photo">
+            </div>
+            <p class="text-lg font-semibold ml-6">
+              <span class="text-primary font-bold">250,000+</span>
+              meals delivered last year!
+            </p>
+          </div>
+        </div>
 
-          <a class="text-gray bg-white inline-block no-underline text-xl py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all focus:outline-none shadow-primary"
-            href="#how">Learn more ↓</a>
+        <!--HERO TEXT BOX -->
+        <div>
+          <picture>
+            <source srcset="../img/hero.webp" type="image/webp">
+            <source srcset="../img/hero-min.png" type="image/png">
+
+            <img src="../img/hero-min.png" class="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table">
+          </picture>
         </div>
 
       </div>
     </section>
+
+    <!--SECTION FEATURED -->
+    <section class="pt-12 pb-8">
+      <!--Container -->
+      <div class="max-w-[1200px] px-8 my-0 mx-auto">
+
+        <h2 class="text-sm uppercase tracking-[0.75px] font-medium text-center mb-6 text-gray-one">As featured in</h2>
+        <!--Logos -->
+        <div class="flex justify-around">
+          <img class="h-8 brightness-0 opacity-50" src="../img/logos/techcrunch.png" alt="Techcrunch logo">
+          <img class="h-8 brightness-0 opacity-50" src="../img/logos/business-insider.png" alt="Business insider logo">
+          <img class="h-8 brightness-0 opacity-50" src="../img/logos/the-new-york-times.png"
+            alt="The New York Times logo">
+          <img class="h-8 brightness-0 opacity-50" src="../img/logos/forbes.png" alt="Forbes logo">
+          <img class="h-8 brightness-0 opacity-50" src="../img/logos/usa-today.png" alt="usa-today logo">
+        </div>
+      </div>
+    </section>
+
+    <!--SECTION HOW -->
+    <section class="py-24">
+      <div class="container">
+        <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">How it works</span>
+        <h2 class="heading-secondary ">Your daily dose of health in 3 simple steps</h2>
+      </div>
+      <div class="container grid grid-cols-2 items-center gap-x-16 gap-y-24">
+        <!-- STEP 01 -->
+        <div>
+          <p class="text-[86px] text-[#ddd] mb-3 font-semibold">01</p>
+          <h3 class="heading-tertiary">Tell us what you like (and what not)</h3>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 </body>
 
