@@ -665,6 +665,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30px;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .max-w-\[1300px\] {
   max-width: 1300px;
 }
@@ -687,6 +691,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-fr-55-45 {
+  grid-template-columns: 55fr 45fr;
 }
 
 .flex-col {
@@ -745,6 +753,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-24 {
   -moz-column-gap: 6rem;
        column-gap: 6rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .overflow-hidden {
@@ -821,6 +838,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-12 {
   padding: 3rem;
+}
+
+.p-24 {
+  padding: 6rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .py-0 {
@@ -1014,6 +1039,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#ddd\] {
   --tw-text-opacity: 1;
   color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
+.text-gray-two {
+  --tw-text-opacity: 1;
+  color: rgb(111 111 111 / var(--tw-text-opacity));
 }
 
 .no-underline {
