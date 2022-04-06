@@ -472,36 +472,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -541,6 +511,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
+@media (max-width: 1200px) {
+  .heading-secondary {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
 .heading-tertiary {
   margin-bottom: 2rem;
   font-size: 30px;
@@ -549,6 +526,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   letter-spacing: 0.5px;
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+@media (max-width: 1200px) {
+  .heading-tertiary {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .relative {
@@ -633,6 +617,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 6rem;
 }
 
+.h-\[18px\] {
+  height: 18px;
+}
+
 .h-\[22px\] {
   height: 22px;
 }
@@ -651,10 +639,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[30px\] {
   height: 30px;
-}
-
-.h-\[18px\] {
-  height: 18px;
 }
 
 .w-12 {
@@ -703,6 +687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-fr-55-45 {
+  grid-template-columns: 55fr 45fr;
 }
 
 .flex-col {
@@ -829,6 +817,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 207 102 / var(--tw-bg-opacity));
+}
+
+.bg-green-one {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 216 45 / var(--tw-bg-opacity));
+}
+
+.bg-yelow-one {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 212 59 / var(--tw-bg-opacity));
+}
+
 .p-12 {
   padding: 3rem;
 }
@@ -846,9 +849,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-3 {
@@ -859,6 +862,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .px-8 {
@@ -879,11 +887,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .pt-12 {
@@ -908,6 +911,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-center {
   text-align: center;
+}
+
+.font-rubik {
+  font-family: Rubik, sans-serif;
 }
 
 .text-xl {
@@ -1020,6 +1027,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(230 126 34 / var(--tw-text-opacity));
 }
 
+.text-gray-one {
+  --tw-text-opacity: 1;
+  color: rgb(136 136 136 / var(--tw-text-opacity));
+}
+
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(207 113 31 / var(--tw-text-opacity));
@@ -1028,6 +1040,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#ddd\] {
   --tw-text-opacity: 1;
   color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
+.text-gray-two {
+  --tw-text-opacity: 1;
+  color: rgb(111 111 111 / var(--tw-text-opacity));
 }
 
 .no-underline {
@@ -1160,17 +1177,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-color: #fff;
 }
 
-@media (min-width: 1024px) {
-  .lg\:block {
-    display: block;
-  }
-
-  .lg\:text-\[80\%\] {
-    font-size: 80%;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (max-width: 1344px) {
   .xl\:max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -1181,5 +1188,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:text-\[44px\] {
     font-size: 44px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:text-\[80\%\] {
+    font-size: 80%;
   }
 }

@@ -10,9 +10,9 @@
     @apply max-w-[1200px] px-8 my-0 mx-auto;
   }
   .heading-secondary {
-    @apply text-[44px] leading-[1.2] mb-24 font-bold text-dark tracking-[0.5px];
+    @apply text-[44px] lg:text-4xl leading-[1.2] mb-24 font-bold text-dark tracking-[0.5px];
   }
   .heading-tertiary {
-    @apply text-[30px] leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
+    @apply text-[30px] lg:text-2xl leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
   }
 }
