@@ -11,7 +11,10 @@ module.exports = {
       'gray-one': '#888',
       'gray': '#555',
       'dark': '#333',
-      'white': '#fff'
+      'white': '#fff',
+      'green': '#51cf66',
+      'green-one': '#94d82d',
+      'yelow-one': '#ffd43b',
     },
     fontFamily: {
       rubik: ['Rubik', 'sans-serif'],
@@ -19,6 +22,7 @@ module.exports = {
     extend: {
       boxShadow: {
         'shad': '0 0 0 8px rgba(230, 125, 34,  0.5)',
+        'card-shad': '0 24px 48px rgba(0, 0, 0,  0.08)',
       },
     },
 

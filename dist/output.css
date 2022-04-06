@@ -637,12 +637,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
 .w-12 {
   width: 3rem;
 }
 
 .w-\[35\%\] {
   width: 35%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .max-w-\[1300px\] {
@@ -663,6 +683,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -689,6 +717,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 6rem;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-x-16 {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -696,6 +736,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-24 {
   row-gap: 6rem;
+}
+
+.gap-y-16 {
+  row-gap: 4rem;
+}
+
+.gap-x-24 {
+  -moz-column-gap: 6rem;
+       column-gap: 6rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .whitespace-nowrap {
@@ -706,8 +759,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 50%;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-\[100px\] {
+  border-radius: 100px;
+}
+
 .border-\[3px\] {
   border-width: 3px;
+}
+
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
 }
 
 .border-solid {
@@ -717,6 +782,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-light {
   --tw-border-opacity: 1;
   border-color: rgb(253 242 233 / var(--tw-border-opacity));
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(230 126 34 / var(--tw-border-opacity));
 }
 
 .bg-light {
@@ -732,6 +802,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(81 207 102 / var(--tw-bg-opacity));
+}
+
+.bg-green-one {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 216 45 / var(--tw-bg-opacity));
+}
+
+.bg-yelow-one {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 212 59 / var(--tw-bg-opacity));
+}
+
+.p-12 {
+  padding: 3rem;
 }
 
 .py-0 {
@@ -764,6 +853,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 6rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pt-12 {
   padding-top: 3rem;
 }
@@ -774,6 +873,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.pb-\[2px\] {
+  padding-bottom: 2px;
 }
 
 .text-center {
@@ -810,6 +917,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[86px\] {
   font-size: 86px;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-normal {
@@ -850,6 +967,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-\[1\.8\] {
   line-height: 1.8;
+}
+
+.leading-\[1\.2\] {
+  line-height: 1.2;
 }
 
 .tracking-\[-0\.5px\] {
@@ -904,6 +1025,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.5;
 }
 
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .brightness-0 {
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -913,6 +1040,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
