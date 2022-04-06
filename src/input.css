@@ -7,7 +7,7 @@
     @apply inline-block no-underline text-xl py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all;
   }
   .container {
-    @apply max-w-[1200px] px-8 my-0 mx-auto;
+    @apply max-w-6xl px-8 my-0 mx-auto;
   }
   .heading-secondary {
     @apply text-[44px] lg:text-4xl leading-[1.2] mb-24 font-bold text-dark tracking-[0.5px];

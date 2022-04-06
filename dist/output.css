@@ -496,7 +496,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
+  max-width: 72rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -1196,7 +1196,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 
-  .lg\:text-\[80\%\] {
-    font-size: 80%;
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lg\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .lg\:gap-y-16 {
+    row-gap: 4rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:text-\[90\%\] {
+    font-size: 90%;
   }
 }
