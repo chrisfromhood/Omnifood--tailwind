@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="lg:text-[90%]">
+<html class=" lg:text-[90%] md:text-[86%]">
 
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <title>Omnifood &mdash; Never cook again!</title>
-
+  <script defer src="js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
@@ -16,39 +16,49 @@
     <a href="#">
       <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
     </a>
-    <nav>
-      <ul class="list-none flex items-center gap-12 lg:gap-8">
+
+    <nav
+      class="tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all tablet:opacity-100 tablet:pointer-events-none tablet:invisible">
+      <ul class="list-none flex items-center gap-12 lg:gap-8 tablet:flex-col tablet:gap-12">
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition" href="#how">How
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
+            href="#how">How
             it works</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
             href="#meals">Meals</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
             href="#testimonials">Testimonials</a>
         </li>
         <li>
-          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition"
+          <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
             href="#pricing">Pricing</a>
         </li>
         <li>
-          <a class="btn bg-primary hover:bg-secondary py-3 px-4 text-white font-medium text-lg leading-[18px]"
+          <a class="btn bg-primary hover:bg-secondary py-3 px-4 text-white font-medium text-lg leading-[18px] tablet:text-[30px]"
             href="#cta">Try for free</a>
         </li>
       </ul>
     </nav>
+    <!--MOBILE-NAV -->
+    <button class="border-none bg-none cursor-pointer hidden tablet:block">
+      <ion-icon class="h-12 w-12 text-dark" name="menu"></ion-icon>
+      <ion-icon class="h-12 w-12 text-dark hidden" name="close"></ion-icon>
+    </button>
+
   </header>
 
   <main>
     <!--SECTION HERO -->
     <section class="bg-light pt-12 pb-24">
       <!--HERO GRID -->
-      <div class="grid max-w-[1300px] xl:max-w-[1200px] px-8 my-0 mx-auto grid-cols-2 gap-24 lg:gap-12 items-center">
+      <div
+        class="grid max-w-[1300px] xl:max-w-[1200px] px-8 md:px-20 my-0 mx-auto grid-cols-2 md:grid-cols-1 gap-24 lg:gap-12 md:gap-16 items-center">
         <!--HERO TEXT BOX -->
-        <div>
+        <div class="md:text-center">
           <h1 class="text-[52px] xl:text-[44px] leading-[1.05] mb-8 font-bold text-dark tracking-[-0.5px] ">A healthy
             meal delivered to
             your door, every single day</h1>
@@ -61,7 +71,7 @@
           <a class="text-gray bg-white btn hover:bg-light hover:outline-3 hover:outline hover:outline-white"
             href=" #how">Learn more
             ↓</a>
-          <div class="flex items-center mt-20">
+          <div class="flex items-center gap-4 mt-20 md:mt-8 justify-center">
             <div class="flex">
               <img class="h-12 w-12 rounded-[50%] mr-[-16px] border-[3px] border-solid border-light max-w-none"
                 src="../img/customers/customer-1.jpg" alt="Customer photo">
@@ -83,13 +93,13 @@
           </div>
         </div>
 
-        <!--HERO TEXT BOX -->
+        <!--HERO IMG BOX -->
         <div>
           <picture>
             <source srcset="../img/hero.webp" type="image/webp">
             <source srcset="../img/hero-min.png" type="image/png">
 
-            <img src="../img/hero-min.png" class="hero-img"
+            <img src="../img/hero-min.png" class="w-full md:w-[60%] mx-auto"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table">
           </picture>
         </div>
@@ -105,12 +115,13 @@
         <h2 class="text-sm uppercase tracking-[0.75px] font-medium text-center mb-6 text-gray-one">As featured in</h2>
         <!--Logos -->
         <div class="flex justify-around">
-          <img class="h-8 brightness-0 opacity-50" src="../img/logos/techcrunch.png" alt="Techcrunch logo">
-          <img class="h-8 brightness-0 opacity-50" src="../img/logos/business-insider.png" alt="Business insider logo">
-          <img class="h-8 brightness-0 opacity-50" src="../img/logos/the-new-york-times.png"
+          <img class="h-8 md:h-6  brightness-0 opacity-50" src="../img/logos/techcrunch.png" alt="Techcrunch logo">
+          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/business-insider.png"
+            alt="Business insider logo">
+          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/the-new-york-times.png"
             alt="The New York Times logo">
-          <img class="h-8 brightness-0 opacity-50" src="../img/logos/forbes.png" alt="Forbes logo">
-          <img class="h-8 brightness-0 opacity-50" src="../img/logos/usa-today.png" alt="usa-today logo">
+          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/forbes.png" alt="Forbes logo">
+          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/usa-today.png" alt="usa-today logo">
         </div>
       </div>
     </section>
@@ -124,7 +135,7 @@
       <div class="container grid grid-cols-2 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16">
         <!-- STEP 01 -->
         <div>
-          <p class="text-[86px] text-[#ddd] mb-3 font-semibold">01</p>
+          <p class="text-[86px] md:text-[74px] text-[#ddd] mb-3 font-semibold">01</p>
           <h3 class="heading-tertiary whitespace-nowrap">Tell us what you like (and what not)</h3>
           <p class="text-lg leading-[1.8]">
             Never again waste time thinking about what to eat! Omnifood AI
@@ -172,18 +183,19 @@
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px] ">Meals</span>
         <h2 class="heading-secondary ">Omnifood AI chooses from 5,000+ recipes</h2>
       </div>
-      <div class="container grid grid-cols-3 gap-y-16 gap-x-24 mb-12">
+      <div
+        class="container grid grid-cols-3 tablet:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-24 lg:gap-x-16 md:gap-x-12 mb-12">
         <!--CARD 1 -->
         <div class="shadow-md rounded-xl overflow-hidden transition-all hover:-translate-y-3">
           <img class="w-full" src="../img/meals/meal-1.jpg" alt="Japanese Gyozas">
           <!--CARD CONTENT -->
-          <div class="p-12 pt-8">
+          <div class="p-12 pt-8 md:p-8 md:pt-6">
             <div class="mb-3 flex gap-1">
               <span
                 class="bg-green inline-block py-1 px-2 text-xs uppercase text-dark rounded-[100px] font-semibold">Vegetarian</span>
             </div>
-            <p class="text-2xl text-dark font-semibold mb-8">Japanese Gyozas</p>
-            <ul class="flex flex-col list-none gap-5">
+            <p class="text-2xl text-dark font-semibold mb-8 md:mb-6">Japanese Gyozas</p>
+            <ul class="flex flex-col list-none gap-5 ">
               <li class="text-lg flex items-center gap-4">
                 <ion-icon class="h-6 w-6 text-primary" name="flame"></ion-icon>
                 <span><strong>650</strong> calories</span>
@@ -204,14 +216,14 @@
         <div class="shadow-md rounded-xl overflow-hidden transition-all hover:-translate-y-3">
           <img class="w-full" src="../img/meals/meal-2.jpg" alt="Japanese Gyozas">
           <!--CARD CONTENT -->
-          <div class="p-12 pt-8">
+          <div class="p-12 pt-8 md:p-8 md:pt-6 ">
             <div class="mb-3 flex gap-1">
               <span
                 class="bg-green-one inline-block py-1 px-2 text-xs uppercase text-dark rounded-[100px] font-semibold">Vegen</span>
               <span
                 class="bg-yelow-one inline-block py-1 px-2 text-xs uppercase text-dark rounded-[100px] font-semibold">Paleo</span>
             </div>
-            <p class="text-2xl text-dark font-semibold mb-8">Avocado Salad</p>
+            <p class="text-2xl text-dark font-semibold mb-8 md:mb-6">Avocado Salad</p>
             <ul class="flex flex-col list-none gap-5">
               <li class="text-lg flex items-center gap-4">
                 <ion-icon class="h-6 w-6 text-primary" name="flame"></ion-icon>
@@ -230,9 +242,9 @@
         </div>
 
         <!--DIETS -->
-        <div>
+        <div class="tablet:col-span-full tablet:justify-self-center">
           <h3 class="heading-tertiary whitespace-nowrap">Working width diet:</h3>
-          <ul class="flex flex-col list-none gap-4">
+          <ul class="flex flex-col list-none gap-4 md:gap-2">
             <li class="flex text-lg items-center gap-4 leading-[1.2]">
               <ion-icon class="w-[30px] h-[30px] text-primary" name="checkmark"></ion-icon>
               <span>Vegetarian</span>
@@ -274,7 +286,7 @@
 
       </div>
 
-      <div class="container text-center text-lg">
+      <div class="container text-center text-lg tablet:text-center">
         <a href="#"
           class="inline-block text-primary no-underline border-b-[1px] border-solid border-primary pb-[2px] transition-all hover:border-none">See
           all recipes →</a>
@@ -283,7 +295,7 @@
     </section>
 
     <!--SECTION TESTIMONIALS -->
-    <section class="bg-light grid grid-cols-fr-55-45 items-center">
+    <section class="bg-light grid grid-cols-fr-55-45 md:grid-cols-1 items-center">
       <div class="p-24 lg:px-8">
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">Testimonials</span>
         <h2 class="heading-secondary ">Once you try it, you can't go back</h2>
@@ -316,7 +328,8 @@
           </figure>
         </div>
       </div>
-      <div class="grid grid-cols-3 xl:grid-cols-2 gap-4 p-4">
+      <!--GALLERY -->
+      <div class="grid grid-cols-3 xl:grid-cols-2 md:grid-cols-6 gap-4 p-4">
         <figure class="overflow-hidden">
           <img class="block w-full transition-all hover:scale-[1.1]" src="../img/gallery/gallery-1.jpg" alt="Photo of beautifully
             arranged food">
@@ -370,6 +383,7 @@
     </section>
 
   </main>
+
 </body>
 
 </html>

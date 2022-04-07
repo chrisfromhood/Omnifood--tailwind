@@ -484,6 +484,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+  line-height: 1;
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   transition-property: all;
@@ -617,10 +618,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 6rem;
 }
 
-.h-\[18px\] {
-  height: 18px;
-}
-
 .h-\[22px\] {
   height: 22px;
 }
@@ -645,12 +642,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
 }
 
 .w-6 {
@@ -675,6 +672,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[1200px\] {
   max-width: 1200px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .list-none {
@@ -721,16 +722,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 6rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-1 {
   gap: 0.25rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-x-16 {
@@ -792,6 +793,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-style: solid;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-light {
   --tw-border-opacity: 1;
   border-color: rgb(253 242 233 / var(--tw-border-opacity));
@@ -849,9 +854,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0px;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-3 {
@@ -862,11 +867,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .px-8 {
@@ -1192,10 +1192,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 1200px) {
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
   }
@@ -1213,6 +1209,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     row-gap: 4rem;
   }
 
+  .lg\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1220,5 +1221,186 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[90\%\] {
     font-size: 90%;
+  }
+}
+
+@media (max-width: 944px) {
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
+  .md\:h-6 {
+    height: 1.5rem;
+  }
+
+  .md\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+
+  .md\:text-\[86\%\] {
+    font-size: 86%;
+  }
+
+  .md\:text-\[74px\] {
+    font-size: 74px;
+  }
+}
+
+@media (max-width: 850px) {
+  .tablet\:pointer-events-none {
+    pointer-events: none;
+  }
+
+  .tablet\:invisible {
+    visibility: hidden;
+  }
+
+  .tablet\:absolute {
+    position: absolute;
+  }
+
+  .tablet\:top-0 {
+    top: 0px;
+  }
+
+  .tablet\:left-0 {
+    left: 0px;
+  }
+
+  .tablet\:col-span-full {
+    grid-column: 1 / -1;
+  }
+
+  .tablet\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tablet\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:flex {
+    display: flex;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-screen {
+    height: 100vh;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
+  }
+
+  .tablet\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tablet\:flex-col {
+    flex-direction: column;
+  }
+
+  .tablet\:items-center {
+    align-items: center;
+  }
+
+  .tablet\:justify-center {
+    justify-content: center;
+  }
+
+  .tablet\:gap-12 {
+    gap: 3rem;
+  }
+
+  .tablet\:justify-self-center {
+    justify-self: center;
+  }
+
+  .tablet\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:text-center {
+    text-align: center;
+  }
+
+  .tablet\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .tablet\:opacity-0 {
+    opacity: 0;
+  }
+
+  .tablet\:opacity-100 {
+    opacity: 1;
+  }
+
+  .tablet\:transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}
+
+@media (max-width: 639px) {
+  .sm\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }

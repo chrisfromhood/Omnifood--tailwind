@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply inline-block no-underline text-xl py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all;
+    @apply inline-block no-underline text-xl leading-[1] py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all;
   }
   .container {
     @apply max-w-6xl px-8 my-0 mx-auto;
