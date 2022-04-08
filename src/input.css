@@ -15,4 +15,16 @@
   .heading-tertiary {
     @apply text-[30px] lg:text-2xl leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
   }
+
+  .nav-open ion-icon[name="close"] {
+    @apply tablet:!block;
+  }
+
+  .main-mobile-nav {
+    @apply tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all tablet:opacity-100 tablet:pointer-events-none tablet:invisible;
+  }
+
+  .nav-open .main-mobile-nav {
+    @apply tablet:opacity-100 tablet:pointer-events-auto tablet:visible;
+  }
 }

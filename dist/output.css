@@ -536,6 +536,79 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (max-width: 850px) {
+  .nav-open ion-icon[name="close"] {
+    display: block !important;
+  }
+
+  .main-mobile-nav {
+    pointer-events: none;
+  }
+
+  .main-mobile-nav {
+    visibility: hidden;
+  }
+
+  .main-mobile-nav {
+    position: absolute;
+  }
+
+  .main-mobile-nav {
+    top: 0px;
+  }
+
+  .main-mobile-nav {
+    left: 0px;
+  }
+
+  .main-mobile-nav {
+    display: flex;
+  }
+
+  .main-mobile-nav {
+    height: 100vh;
+  }
+
+  .main-mobile-nav {
+    width: 100%;
+  }
+
+  .main-mobile-nav {
+    align-items: center;
+  }
+
+  .main-mobile-nav {
+    justify-content: center;
+  }
+
+  .main-mobile-nav {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .main-mobile-nav {
+    opacity: 1;
+  }
+
+  .main-mobile-nav {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .nav-open .main-mobile-nav {
+    pointer-events: auto;
+  }
+
+  .nav-open .main-mobile-nav {
+    visibility: visible;
+  }
+
+  .nav-open .main-mobile-nav {
+    opacity: 1;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -610,10 +683,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-24 {
   height: 6rem;
 }
@@ -672,10 +741,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[1200px\] {
   max-width: 1200px;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 .list-none {
@@ -781,6 +846,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 100px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-\[3px\] {
   border-width: 3px;
 }
@@ -791,10 +860,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-solid {
   border-style: solid;
-}
-
-.border-none {
-  border-style: none;
 }
 
 .border-light {
@@ -1257,10 +1322,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 0.5rem;
   }
 
-  .md\:gap-8 {
-    gap: 2rem;
-  }
-
   .md\:gap-x-12 {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
@@ -1293,58 +1354,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 850px) {
-  .tablet\:pointer-events-none {
-    pointer-events: none;
-  }
-
-  .tablet\:invisible {
-    visibility: hidden;
-  }
-
-  .tablet\:absolute {
-    position: absolute;
-  }
-
-  .tablet\:top-0 {
-    top: 0px;
-  }
-
-  .tablet\:left-0 {
-    left: 0px;
-  }
-
   .tablet\:col-span-full {
     grid-column: 1 / -1;
-  }
-
-  .tablet\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .tablet\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
-  .tablet\:block {
-    display: block;
-  }
-
-  .tablet\:flex {
-    display: flex;
-  }
-
-  .tablet\:hidden {
-    display: none;
-  }
-
-  .tablet\:h-screen {
-    height: 100vh;
-  }
-
-  .tablet\:w-full {
-    width: 100%;
   }
 
   .tablet\:grid-cols-2 {
@@ -1355,14 +1366,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
-  .tablet\:items-center {
-    align-items: center;
-  }
-
-  .tablet\:justify-center {
-    justify-content: center;
-  }
-
   .tablet\:gap-12 {
     gap: 3rem;
   }
@@ -1371,31 +1374,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-self: center;
   }
 
-  .tablet\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .tablet\:text-center {
     text-align: center;
   }
 
   .tablet\:text-\[30px\] {
     font-size: 30px;
-  }
-
-  .tablet\:opacity-0 {
-    opacity: 0;
-  }
-
-  .tablet\:opacity-100 {
-    opacity: 1;
-  }
-
-  .tablet\:transition-all {
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
   }
 }
 

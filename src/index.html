@@ -11,15 +11,27 @@
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
+<style>
+  .btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+  }
+
+  .close-icon {
+    display: none;
+  }
+</style>
+
 <body class="text-gray font-rubik leading-[1] font-normal text-xl">
-  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative">
+  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative nav-open">
     <a href="#">
       <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
     </a>
 
-    <nav
-      class="tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all tablet:opacity-100 tablet:pointer-events-none tablet:invisible">
-      <ul class="list-none flex items-center gap-12 lg:gap-8 tablet:flex-col tablet:gap-12">
+    <nav id="mobile-menu" class="main-mobile-nav">
+      <ul class=" list-none flex items-center gap-12 lg:gap-8 tablet:flex-col tablet:gap-12">
         <li>
           <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
             href="#how">How
@@ -44,9 +56,9 @@
       </ul>
     </nav>
     <!--MOBILE-NAV -->
-    <button class="border-none bg-none cursor-pointer hidden tablet:block">
+    <button class="btn-mobile-nav">
       <ion-icon class="h-12 w-12 text-dark" name="menu"></ion-icon>
-      <ion-icon class="h-12 w-12 text-dark hidden" name="close"></ion-icon>
+      <ion-icon class="h-12 w-12 text-dark" name="close"></ion-icon>
     </button>
 
   </header>
