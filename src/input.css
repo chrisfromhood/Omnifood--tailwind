@@ -16,7 +16,7 @@
     @apply text-[30px] lg:text-2xl leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
   }
 
-  .nav-open ion-icon[name="close"] {
+  .nav-open .[name="close"] {
     @apply tablet:!block;
   }
 

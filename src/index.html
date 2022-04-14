@@ -12,15 +12,24 @@
 </head>
 
 <style>
-  .btn-mobile-nav {
+  /* .btn-mobile-nav {
     border: none;
     background: none;
     cursor: pointer;
     display: none;
+  } */
+  .bg-none {
+    background: none;
   }
 
-  .close-icon {
+  [name="close"] {
     display: none;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .nav-open [name="close"] {
+      display: block;
+    }
   }
 </style>
 
@@ -56,7 +65,7 @@
       </ul>
     </nav>
     <!--MOBILE-NAV -->
-    <button class="btn-mobile-nav">
+    <button class="border-none cursor-pointer bg-none lg:block tablet:hidden">
       <ion-icon class="h-12 w-12 text-dark" name="menu"></ion-icon>
       <ion-icon class="h-12 w-12 text-dark" name="close"></ion-icon>
     </button>
@@ -147,7 +156,7 @@
       <div class="container grid grid-cols-2 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16">
         <!-- STEP 01 -->
         <div>
-          <p class="text-[86px] md:text-[74px] text-[#ddd] mb-3 font-semibold">01</p>
+          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">01</p>
           <h3 class="heading-tertiary whitespace-nowrap">Tell us what you like (and what not)</h3>
           <p class="text-lg leading-[1.8]">
             Never again waste time thinking about what to eat! Omnifood AI
@@ -165,7 +174,7 @@
           <img class="w-[35%] " src="../img/app/app-screen-1.png" alt="iPhone app">
         </div>
         <div>
-          <p class="text-[86px] text-[#ddd] mb-3 font-semibold">02</p>
+          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">02</p>
           <h3 class="heading-tertiary whitespace-nowrap">Approve your weekly meal plan</h3>
           <p class="text-lg leading-[1.8]">
             Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap
@@ -175,7 +184,7 @@
         </div>
         <!-- STEP 03-->
         <div>
-          <p class="text-[86px] text-[#ddd] mb-3 font-semibold">03</p>
+          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">03</p>
           <h3 class="heading-tertiary whitespace-nowrap">Receive meals at convenient time</h3>
           <p class="text-lg leading-[1.8]">
             Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever

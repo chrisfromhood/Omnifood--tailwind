@@ -537,7 +537,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 850px) {
-  .nav-open ion-icon[name="close"] {
+  .nav-open .[name="close"] {
     display: block !important;
   }
 
@@ -743,6 +743,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 1200px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -860,6 +864,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-solid {
   border-style: solid;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-light {
@@ -1257,6 +1265,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 1200px) {
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:gap-8 {
     gap: 2rem;
   }
@@ -1348,14 +1360,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 86%;
   }
 
-  .md\:text-\[74px\] {
-    font-size: 74px;
+  .md\:text-\[60px\] {
+    font-size: 60px;
   }
 }
 
 @media (max-width: 850px) {
   .tablet\:col-span-full {
     grid-column: 1 / -1;
+  }
+
+  .tablet\:hidden {
+    display: none;
   }
 
   .tablet\:grid-cols-2 {
