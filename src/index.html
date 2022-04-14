@@ -7,17 +7,30 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <title>Omnifood &mdash; Never cook again!</title>
-  <script defer src="js/script.js"></script>
+  <script defer src="../js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
 <style>
-  /* .btn-mobile-nav {
+  /* MOBILE */
+  .btn-mobile-nav {
     border: none;
     background: none;
     cursor: pointer;
+
     display: none;
-  } */
+  }
+
+  .icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+  }
+
+  .icon-mobile-nav[name="close-outline"] {
+    display: none;
+  }
+
   .bg-none {
     background: none;
   }
@@ -27,19 +40,74 @@
   }
 
   @media only screen and (max-width: 850px) {
-    .nav-open [name="close"] {
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav {
       display: block;
+    }
+
+    .main-nav {
+      background-color: rgba(255, 255, 255, 0.97);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      transform: translateX(100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+
+      /* Hide navigation */
+      /* Allows NO transitions at all */
+      /* display: none; */
+
+      /* 1) Hide it visually */
+      opacity: 0;
+
+      /* 2) Make it unaccessible to mouse and keyboard */
+      pointer-events: none;
+
+      /* 3) Hide it from screen readers */
+      visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close"] {
+      display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu"] {
+      display: none;
+    }
+
+    .main-nav-list {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+
+    .main-nav-link:link,
+    .main-nav-link:visited {
+      font-size: 3rem;
     }
   }
 </style>
 
 <body class="text-gray font-rubik leading-[1] font-normal text-xl">
-  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative nav-open">
+  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative">
     <a href="#">
       <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
     </a>
 
-    <nav id="mobile-menu" class="main-mobile-nav">
+    <nav id="mobile-menu" class="main-nav">
       <ul class=" list-none flex items-center gap-12 lg:gap-8 tablet:flex-col tablet:gap-12">
         <li>
           <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
@@ -65,7 +133,7 @@
       </ul>
     </nav>
     <!--MOBILE-NAV -->
-    <button class="border-none cursor-pointer bg-none lg:block tablet:hidden">
+    <button class="btn-mobile-nav">
       <ion-icon class="h-12 w-12 text-dark" name="menu"></ion-icon>
       <ion-icon class="h-12 w-12 text-dark" name="close"></ion-icon>
     </button>
