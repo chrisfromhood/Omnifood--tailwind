@@ -33,13 +33,16 @@ module.exports = {
 
     screens: {
       'xl': { 'max': '1344px' },
-      // => @media (max-width: 1279px) { ... }
+      // => @media (max-width: 1344px) { ... }
 
       'lg': { 'max': '1200px' },
-      // => @media (max-width: 1023px) { ... }
+      // => @media (max-width: 1200px) { ... }
 
       'md': { 'max': '944px' },
-      // => @media (max-width: 767px) { ... }
+      // => @media (max-width: 944px) { ... }
+
+      'tablet': { 'max': '850px' },
+      // => @media (max-width: 850px) { ... }
 
       'sm': { 'max': '639px' },
       // => @media (max-width: 639px) { ... }

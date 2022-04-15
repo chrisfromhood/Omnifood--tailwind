@@ -4,15 +4,27 @@
 
 @layer components {
   .btn {
-    @apply inline-block no-underline text-xl py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all;
+    @apply inline-block no-underline text-xl leading-[1] py-4 px-8 font-semibold rounded-lg border-none cursor-pointer transition-all;
   }
   .container {
-    @apply max-w-[1200px] px-8 my-0 mx-auto;
+    @apply max-w-6xl px-8 my-0 mx-auto;
   }
   .heading-secondary {
-    @apply text-[44px] leading-[1.2] mb-24 font-bold text-dark tracking-[0.5px];
+    @apply text-[44px] lg:text-4xl leading-[1.2] mb-24 font-bold text-dark tracking-[0.5px];
   }
   .heading-tertiary {
-    @apply text-[30px] leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
+    @apply text-[30px] lg:text-2xl leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
+  }
+
+  .main-mobile-nav {
+    @apply tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all;
+  }
+
+  .main-mobile-nav--hidden {
+    @apply tablet:opacity-0 tablet:pointer-events-none tablet:invisible;
+  }
+
+  .main-mobile-nav--show {
+    @apply tablet:opacity-100 tablet:pointer-events-auto tablet:visible;
   }
 }
