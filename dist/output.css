@@ -537,18 +537,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 850px) {
-  .nav-open .[name="close"] {
-    display: block !important;
-  }
-
-  .main-mobile-nav {
-    pointer-events: none;
-  }
-
-  .main-mobile-nav {
-    visibility: hidden;
-  }
-
   .main-mobile-nav {
     position: absolute;
   }
@@ -587,25 +575,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .main-mobile-nav {
-    opacity: 1;
-  }
-
-  .main-mobile-nav {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
 
-  .nav-open .main-mobile-nav {
-    pointer-events: auto;
+  .main-mobile-nav--hidden {
+    pointer-events: none;
   }
 
-  .nav-open .main-mobile-nav {
-    visibility: visible;
+  .main-mobile-nav--hidden {
+    visibility: hidden;
   }
 
-  .nav-open .main-mobile-nav {
-    opacity: 1;
+  .main-mobile-nav--hidden {
+    opacity: 0;
   }
 }
 
@@ -681,6 +665,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-24 {
@@ -1265,10 +1253,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 1200px) {
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:gap-8 {
     gap: 2rem;
   }
@@ -1308,6 +1292,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:h-6 {
@@ -1370,8 +1358,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: 1 / -1;
   }
 
-  .tablet\:hidden {
-    display: none;
+  .tablet\:block {
+    display: block;
   }
 
   .tablet\:grid-cols-2 {

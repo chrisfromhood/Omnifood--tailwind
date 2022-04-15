@@ -7,7 +7,7 @@
   <link href="/dist/output.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <title>Omnifood &mdash; Never cook again!</title>
-  <script defer src="js/script.js"></script>
+  <script defer src="../js/script.js"></script>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
 
@@ -22,24 +22,24 @@
     background: none;
   }
 
-  [name="close"] {
+  /* [name="close"] {
     display: none;
-  }
+  } */
 
-  @media only screen and (max-width: 850px) {
+  /* @media only screen and (max-width: 850px) {
     .nav-open [name="close"] {
       display: block;
-    }
+    } */
   }
 </style>
 
 <body class="text-gray font-rubik leading-[1] font-normal text-xl">
-  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative nav-open">
+  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative ">
     <a href="#">
       <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
     </a>
 
-    <nav id="mobile-menu" class="main-mobile-nav">
+    <nav id="mobile-menu" class="main-mobile-nav main-mobile-nav--hidden">
       <ul class=" list-none flex items-center gap-12 lg:gap-8 tablet:flex-col tablet:gap-12">
         <li>
           <a class="inline-block no-underline text-dark font-medium text-lg leading-[18px] transition tablet:text-[30px]"
@@ -65,9 +65,9 @@
       </ul>
     </nav>
     <!--MOBILE-NAV -->
-    <button class="border-none cursor-pointer bg-none lg:block tablet:hidden">
-      <ion-icon class="h-12 w-12 text-dark" name="menu"></ion-icon>
-      <ion-icon class="h-12 w-12 text-dark" name="close"></ion-icon>
+    <button class="border-none bg-none cursor-pointer " id="burger">
+      <ion-icon class="h-12 w-12 text-dark hidden tablet:block" name="menu" id="burger-menu"></ion-icon>
+      <ion-icon class="h-12 w-12 text-dark hidden" name="close"></ion-icon>
     </button>
 
   </header>
