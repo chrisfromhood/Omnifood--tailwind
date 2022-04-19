@@ -2,7 +2,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     backgroundImage: {
-      'hero-picture': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg)",
+      'form-linear': "linear-gradient(to right bottom, #eb984e, #e67e22)",
+      'img-box': "linear-gradient( to right bottom, rgba(235, 151, 78, 0.35), rgba(230, 125, 34, 0.35) ), url(../img/eating.jpg);"
     },
     colors: {
       'primary': '#e67e22',
@@ -13,6 +14,7 @@ module.exports = {
       'gray': '#555',
       'dark': '#333',
       'white': '#fff',
+      'brown': '#45260a',
       'green': '#51cf66',
       'green-one': '#94d82d',
       'yelow-one': '#ffd43b',
@@ -26,8 +28,10 @@ module.exports = {
         'card-shad': '0 24px 48px rgba(0, 0, 0,  0.08)',
       },
       gridTemplateColumns: {
-        // Simple 16 column grid
+        // grid
         'fr-55-45': '55fr 45fr',
+        'fr-2-1': '2fr 1fr',
+        'footer': '1.5fr 1.5fr 1fr 1fr 1fr',
       }
     },
 
@@ -46,6 +50,9 @@ module.exports = {
 
       'sm': { 'max': '639px' },
       // => @media (max-width: 639px) { ... }
+
+      'mob': { 'max': '544px' },
+      // => @media (max-width: 544px) { ... }
     }
   }
 }

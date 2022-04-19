@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
-const burger = document.querySelector('#burger-menu');
+const burger = document.querySelector('#burger');
 const menu = document.querySelector('#mobile-menu');
 
 burger.addEventListener("click", () => {

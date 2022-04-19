@@ -16,6 +16,14 @@
     @apply text-[30px] lg:text-2xl leading-[1.2] mb-8 font-bold text-dark tracking-[0.5px];
   }
 
+  .footer-heading {
+    @apply text-lg font-medium mb-10;
+  }
+
+  .footer-link {
+    @apply no-underline text-base text-[#767676] transition-all;
+  }
+
   .main-mobile-nav {
     @apply tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all;
   }

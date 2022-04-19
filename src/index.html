@@ -1,5 +1,5 @@
 <!doctype html>
-<html class=" lg:text-[90%] md:text-[86%]">
+<html class=" lg:text-[90%] md:text-[86%] sm:text-[80%] mob:text-[78%]">
 
 <head>
   <meta charset="UTF-8">
@@ -12,24 +12,8 @@
 </head>
 
 <style>
-  /* .btn-mobile-nav {
-    border: none;
-    background: none;
-    cursor: pointer;
-    display: none;
-  } */
   .bg-none {
     background: none;
-  }
-
-  /* [name="close"] {
-    display: none;
-  } */
-
-  /* @media only screen and (max-width: 850px) {
-    .nav-open [name="close"] {
-      display: block;
-    } */
   }
 </style>
 
@@ -65,7 +49,7 @@
       </ul>
     </nav>
     <!--MOBILE-NAV -->
-    <button class="border-none bg-none cursor-pointer " id="burger">
+    <button class="border-none bg-none cursor-pointer" id="burger">
       <ion-icon class="h-12 w-12 text-dark hidden tablet:block" name="menu" id="burger-menu"></ion-icon>
       <ion-icon class="h-12 w-12 text-dark hidden" name="close"></ion-icon>
     </button>
@@ -80,7 +64,9 @@
         class="grid max-w-[1300px] xl:max-w-[1200px] px-8 md:px-20 my-0 mx-auto grid-cols-2 md:grid-cols-1 gap-24 lg:gap-12 md:gap-16 items-center">
         <!--HERO TEXT BOX -->
         <div class="md:text-center">
-          <h1 class="text-[52px] xl:text-[44px] leading-[1.05] mb-8 font-bold text-dark tracking-[-0.5px] ">A healthy
+          <h1
+            class="text-[52px] xl:text-[44px] md:text-[38px] sm:text-[36px] leading-[1.05] mb-8 font-bold text-dark tracking-[-0.5px] ">
+            A healthy
             meal delivered to
             your door, every single day</h1>
           <p class="text-xl leading-[1.6] mb-12">
@@ -136,66 +122,79 @@
         <h2 class="text-sm uppercase tracking-[0.75px] font-medium text-center mb-6 text-gray-one">As featured in</h2>
         <!--Logos -->
         <div class="flex justify-around">
-          <img class="h-8 md:h-6  brightness-0 opacity-50" src="../img/logos/techcrunch.png" alt="Techcrunch logo">
-          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/business-insider.png"
+          <img class="h-8 md:h-6 sm:h-4  brightness-0 opacity-50" src="../img/logos/techcrunch.png"
+            alt="Techcrunch logo">
+          <img class="h-8 md:h-6 sm:h-4 brightness-0 opacity-50" src="../img/logos/business-insider.png"
             alt="Business insider logo">
-          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/the-new-york-times.png"
+          <img class="h-8 md:h-6 sm:h-4 brightness-0 opacity-50" src="../img/logos/the-new-york-times.png"
             alt="The New York Times logo">
-          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/forbes.png" alt="Forbes logo">
-          <img class="h-8 md:h-6 brightness-0 opacity-50" src="../img/logos/usa-today.png" alt="usa-today logo">
+          <img class="h-8 md:h-6 sm:h-4 brightness-0 opacity-50" src="../img/logos/forbes.png" alt="Forbes logo">
+          <img class="h-8 md:h-6 sm:h-4 brightness-0 opacity-50" src="../img/logos/usa-today.png" alt="usa-today logo">
         </div>
       </div>
     </section>
 
     <!--SECTION HOW -->
-    <section class="py-24">
+    <section class="py-24 px-0">
       <div class="container">
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">How it works</span>
         <h2 class="heading-secondary ">Your daily dose of health in 3 simple steps</h2>
       </div>
-      <div class="container grid grid-cols-2 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16">
+      <div class="container grid grid-cols-2 mob:grid-cols-1 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16">
         <!-- STEP 01 -->
         <div>
-          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">01</p>
-          <h3 class="heading-tertiary whitespace-nowrap">Tell us what you like (and what not)</h3>
-          <p class="text-lg leading-[1.8]">
-            Never again waste time thinking about what to eat! Omnifood AI
-            will create a 100% personalized weekly meal plan just for you. It
-            makes sure you get all the nutrients and vitamins you need, no
-            matter what diet you follow!
-          </p>
+          <div>
+            <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">01</p>
+            <h3 class="heading-tertiary">Tell us what you like (and what not)
+            </h3>
+            <p class="text-lg leading-[1.8]">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img class="w-[35%] " src="../img/app/app-screen-1.png" alt="iPhone app">
+          </div>
         </div>
-        <div class="relative flex items-center justify-center">
-          <img class="w-[35%] " src="../img/app/app-screen-1.png" alt="iPhone app">
-        </div>
+
         <!-- STEP 02 -->
-        <div
-          class="relative flex items-center justify-center before:absolute before:w-[60%] before:h-[60%] before:pb-[60%] before:bg-light -z-10 before:content-none before:block before:rounded-[50%] before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] ">
-          <img class="w-[35%] " src="../img/app/app-screen-1.png" alt="iPhone app">
-        </div>
         <div>
-          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">02</p>
-          <h3 class="heading-tertiary whitespace-nowrap">Approve your weekly meal plan</h3>
-          <p class="text-lg leading-[1.8]">
-            Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap
-            entire meals, or
-            even add your own recipes.
-          </p>
+          <div
+            class="relative flex items-center justify-center before:absolute before:w-[60%] before:h-[60%] before:pb-[60%] before:bg-light -z-10 before:content-none before:block before:rounded-[50%] before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%] ">
+            <img class="w-[35%] " src="../img/app/app-screen-1.png" alt="iPhone app">
+          </div>
+          <div>
+            <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">02</p>
+            <h3 class="heading-tertiary">Approve your weekly meal plan</h3>
+            <p class="text-lg leading-[1.8]">
+              Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap
+              entire meals, or
+              even add your own recipes.
+            </p>
+          </div>
         </div>
+
+
         <!-- STEP 03-->
         <div>
-          <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">03</p>
-          <h3 class="heading-tertiary whitespace-nowrap">Receive meals at convenient time</h3>
-          <p class="text-lg leading-[1.8]">
-            Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever
-            works best for
-            you. You can change delivery schedule and address daily!
-          </p>
+          <div>
+            <p class="text-[86px] md:text-[60px] text-[#ddd] mb-3 font-semibold">03</p>
+            <h3 class="heading-tertiary">Receive meals at convenient time</h3>
+            <p class="text-lg leading-[1.8]">
+              Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever
+              works best for
+              you. You can change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img class="w-[35%]" src="../img/app/app-screen-1.png" alt="iPhone app">
+          </div>
         </div>
-        <div class="relative flex items-center justify-center">
-          <img class="w-[35%]" src="../img/app/app-screen-1.png" alt="iPhone app">
-        </div>
+
       </div>
+
     </section>
 
     <!--SECTION MEALS -->
@@ -320,7 +319,7 @@
       <div class="p-24 lg:px-8">
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">Testimonials</span>
         <h2 class="heading-secondary ">Once you try it, you can't go back</h2>
-        <div class="grid grid-cols-2 gap-x-20 gap-y-12">
+        <div class="grid grid-cols-2 sm:grid-cols-1 gap-x-20 gap-y-12">
           <figure>
             <img class="w-16 rounded-[50%] mb-3" src="../img/customers/dave.jpg" alt="Photo of customer Dave Bryson">
             <blockquote class="text-lg leading-[1.8] mb-4">Inexpensive, healthy and great-tasting meals, without even
@@ -349,8 +348,9 @@
           </figure>
         </div>
       </div>
+
       <!--GALLERY -->
-      <div class="grid grid-cols-3 xl:grid-cols-2 md:grid-cols-6 gap-4 p-4">
+      <div class="grid grid-cols-3 xl:grid-cols-2 md:grid-cols-6 mob:grid-cols-4 mob:gap-3 gap-4 p-4">
         <figure class="overflow-hidden">
           <img class="block w-full transition-all hover:scale-[1.1]" src="../img/gallery/gallery-1.jpg" alt="Photo of beautifully
             arranged food">
@@ -403,7 +403,267 @@
 
     </section>
 
+    <!--SECTION PRICING-->
+    <section class="py-24 px-0">
+
+      <div class="container">
+        <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75]">Pricing</span>
+        <h2 class="heading-secondary ">Eating well without breaking the bank</h2>
+      </div>
+
+      <div class="container grid grid-cols-2 gap-x-16 gap-y-24 mb-12">
+        <!--PRICING PLAN STARTER-->
+        <div class="justify-self-end border-2 border-solid border-light p-12 rounded-xl w-[75%]">
+
+          <header class="text-center mb-12">
+            <p class="text-primary font-semibold text-xl uppercase tracking-[0.75] mb-8">Starter</p>
+            <p class="text-dark font-semibold text-[62px] mb-4"> <span class="text-[30px] font-medium mr-2">$</span> 399
+            </p>
+            <p class="text-base text-gray-two leading-[1.6]">per month. That's just $13 per meal!</p>
+          </header>
+          <ul class="flex list-none flex-col gap-4">
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span class="">1 meal per day</span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span class="">Order from 11am to 9pm</span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span class="">Delivery is free</span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="close"></ion-icon>
+            </li>
+          </ul>
+
+          <div class="text-center mt-12">
+            <a class="text-white bg-primary btn mr-4 hover:bg-secondary" href="#cta">Start eating well</a>
+          </div>
+        </div>
+
+        <!--PRICING COMPLETE -->
+        <div class="bg-light p-12 rounded-xl w-[75%] relative overflow-hidden">
+          <div
+            class="absolute top-[6%] right-[-18%] uppercase text-sm font-bold text-dark bg-yelow-one py-2 px-20 rotate-45">
+            Best value</div>
+          <header class=" text-center mb-12">
+            <p class="text-primary font-semibold text-xl uppercase tracking-[0.75] mb-8">Complete</p>
+            <p class="text-dark font-semibold text-[62px] mb-4"> <span class="text-[30px] font-medium mr-2">$</span> 649
+            </p>
+            <p class="text-base text-gray-two leading-[1.6]">per month. That's just $11 per meal!</p>
+          </header>
+          <ul class="flex list-none flex-col gap-4">
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span> <span class="font-medium">2 meals</span> per day</span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span>Order <span class="font-medium">24/7</span> </span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span>Delivery is free</span>
+            </li>
+            <li class="text-lg flex items-center gap-4 leading-[1.2]">
+              <ion-icon class="w-7 h-7 text-primary" name="checkmark"></ion-icon>
+              <span>Get access to latest recipes</span>
+            </li>
+          </ul>
+
+          <div class="text-center mt-12">
+            <a class="text-white bg-primary btn mr-4 hover:bg-secondary" href="#cta">Start eating well</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid mb-24">
+          <aside class="text-center leading-[1.6] text-base">Prices include all applicable taxes. You can cancel at any
+            time.
+            Both plans include the following:</aside>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="grid grid-cols-4">
+          <div>
+            <ion-icon class="h-8 w-8 text-primary bg-light p-4 rounded-[50%] mb-8" name="infinite"></ion-icon>
+            <p class="text-2xl text-dark font-bold mb-4">Never cook again!</p>
+            <p class="text-lg leading-[1.8]">Our subscriptions cover 365 days per year, even including major
+              holidays.</p>
+          </div>
+          <div>
+            <ion-icon class="h-8 w-8 text-primary bg-light p-4 rounded-[50%] mb-8" name="nutrition"></ion-icon>
+            <p class="text-2xl text-dark font-bold mb-4">Local and organic</p>
+            <p class="text-lg leading-[1.8]">Our cooks only use local, fresh, and organic products to prepare your
+              meals..</p>
+          </div>
+          <div>
+            <ion-icon class="h-8 w-8 text-primary bg-light p-4 rounded-[50%] mb-8" name="leaf"></ion-icon>
+            <p class="text-2xl text-dark font-bold mb-4">No waste</p>
+            <p class="text-lg leading-[1.8]">All our partners only use reusable containers to package all your meals.
+            </p>
+          </div>
+          <div>
+            <ion-icon class="h-8 w-8 text-primary bg-light p-4 rounded-[50%] mb-8" name="pause"></ion-icon>
+            <p class="text-2xl text-dark font-bold mb-4">Pause anytime</p>
+            <p class="text-lg leading-[1.8]">Going on vacation? Just pause your subscription, and we refund unused days.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!--SECTION CTA-->
+    <section class="pt-12 pb-32 py-0 ">
+      <div class="container">
+        <div class="grid grid-cols-fr-2-1 bg-form-linear rounded-xl overflow-hidden">
+          <!--TEXT-BOX-->
+          <div class="p-16 pt-12 text-brown">
+            <h2 class="heading-secondary mb-6">Get your first meal for free!</h2>
+            <p class="text-lg leading-[1.8] mb-12">Healthy, tasty and hassle-free meals are waiting for you. Start
+              eating well today. You can cancel or pause anytime. And the
+              first meal is on us!</p>
+            <!--FORM-->
+            <form class="grid grid-cols-2 gap-x-8 gap-y-6">
+              <div>
+                <label class="block text-base font-medium mb-3" for="full-name">Full Name</label>
+                <input class="w-full p-3 text-lg border-none bg-light rounded-lg " type="text" placeholder="John Smith"
+                  required>
+              </div>
+              <div>
+                <label class="block text-base font-medium mb-3" for="email">Email address</label>
+                <input class="w-full p-3 text-lg border-none bg-light rounded-lg " type="text"
+                  placeholder="me@example.com" required>
+              </div>
+              <div>
+                <label class="block text-base font-medium mb-3" for="full-name">Full Name</label>
+                <select class="w-full p-3 text-lg border-none bg-light rounded-lg" name="select-where" id="select-where"
+                  required>
+                  <option value>Please choose one option</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">YouTube video</option>
+                  <option value="podcast">Podcast</option>
+                  <option value="ad">Facebook ad</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <button class="btn bg-brown text-light self-end p-3">Sign up now</button>
+            </form>
+          </div>
+          <!--IMG-BOX-->
+          <div class="bg-img-box bg-cover bg-center" role="img" aria-label="Woman enjoying food"></div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="py-32 px-0 border border-solid border-[#eee]">
+    <div class="container">
+      <div class="grid grid-cols-footer gap-x-16 gap-y-24">
+        <!--LOGO COLUMN FOOTER-->
+        <div class="flex flex-col">
+          <a class="block mb-8" href="#">
+            <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
+          </a>
+          <ul class="list-none flex gap-6">
+            <li>
+              <a href="#">
+                <ion-icon class="w-6 h-6 text-base no-underline transition-all text-[#767676]" name="logo-instagram">
+                </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="w-6 h-6 text-base no-underline transition-all text-[#767676]" name="logo-facebook">
+                </ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="w-6 h-6 text-base no-underline transition-all text-[#767676]" name="logo-twitter">
+                </ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="text-sm leading-[1.6] text-[#767676] mt-16">
+            Copyright © <span>2022</span> by Omnifood, Inc.
+            All rights reserved.
+          </p>
+        </div>
+        <!--CONTACT US COLUMN FOOTER-->
+        <div>
+          <p class="footer-heading">Contact Us</p>
+          <address class="not-italic text-base leading-[1.6]">
+            <p class="mb-6">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+              <br>
+              <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+            </p>
+          </address>
+        </div>
+        <!--ACCOUNT FOOTER-->
+        <nav>
+          <p class="footer-heading">Account</p>
+          <ul class="flex flex-col gap-6 no-underline ">
+            <li>
+              <a href="#" class="footer-link">Create account</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Sign in</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">iOS app</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Android app</a>
+            </li>
+          </ul>
+        </nav>
+        <!--COMPANY FOOTER-->
+        <nav>
+          <p class="footer-heading">Company</p>
+          <ul class="flex flex-col gap-6 no-underline ">
+            <li>
+              <a href="#" class="footer-link">About Omnifood</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">For Business</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Cooking partners</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <!--RESOURCES FOOTER-->
+        <nav>
+          <p class="footer-heading">Resources</p>
+          <ul class="flex flex-col gap-6 no-underline ">
+            <li>
+              <a href="#" class="footer-link">Recipe directory</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Help center</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy & terms</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </footer>
 
 </body>
 
