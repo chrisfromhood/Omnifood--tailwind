@@ -24,6 +24,10 @@
     @apply no-underline text-base text-[#767676] transition-all;
   }
 
+  .step-img-box {
+    @apply relative flex items-center justify-center before:absolute before:w-[60%] before:h-[60%] before:pb-[60%] before:bg-light -z-10 before:content-none before:block before:rounded-[50%] before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%];
+  }
+
   .main-mobile-nav {
     @apply tablet:absolute tablet:top-0 tablet:left-0 tablet:w-full tablet:h-screen tablet:bg-white tablet:flex tablet:items-center tablet:justify-center tablet:transition-all;
   }

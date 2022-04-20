@@ -1604,6 +1604,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 544px) {
+  .mob\:order-2 {
+    order: 2;
+  }
+
+  .mob\:order-1 {
+    order: 1;
+  }
+
+  .mob\:order-4 {
+    order: 4;
+  }
+
+  .mob\:order-3 {
+    order: 3;
+  }
+
+  .mob\:order-5 {
+    order: 5;
+  }
+
+  .mob\:order-6 {
+    order: 6;
+  }
+
   .mob\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
