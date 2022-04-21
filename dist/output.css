@@ -492,6 +492,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+@media (max-width: 544px) {
+  .btn {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 .container {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -553,6 +565,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  z-index: 999;
+  height: 5rem !important;
+  width: 100%;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  opacity: 0.95;
 }
 
 @media (max-width: 850px) {
@@ -620,16 +646,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .top-\[6\%\] {
   top: 6%;
 }
 
 .right-\[-18\%\] {
   right: -18%;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .my-0 {
@@ -1340,69 +1367,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.before\:absolute::before {
-  content: var(--tw-content);
-  position: absolute;
-}
-
-.before\:top-1\/2::before {
-  content: var(--tw-content);
-  top: 50%;
-}
-
-.before\:left-1\/2::before {
-  content: var(--tw-content);
-  left: 50%;
-}
-
-.before\:block::before {
-  content: var(--tw-content);
-  display: block;
-}
-
-.before\:h-\[60\%\]::before {
-  content: var(--tw-content);
-  height: 60%;
-}
-
-.before\:w-\[60\%\]::before {
-  content: var(--tw-content);
-  width: 60%;
-}
-
-.before\:translate-x-\[-50\%\]::before {
-  content: var(--tw-content);
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.before\:translate-y-\[-50\%\]::before {
-  content: var(--tw-content);
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.before\:rounded-\[50\%\]::before {
-  content: var(--tw-content);
-  border-radius: 50%;
-}
-
-.before\:bg-light::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 242 233 / var(--tw-bg-opacity));
-}
-
-.before\:pb-\[60\%\]::before {
-  content: var(--tw-content);
-  padding-bottom: 60%;
-}
-
-.before\:content-none::before {
-  --tw-content: none;
-  content: var(--tw-content);
-}
-
 .hover\:-translate-y-3:hover {
   --tw-translate-y: -0.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1556,12 +1520,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: 1 / -1;
   }
 
+  .tablet\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .tablet\:block {
     display: block;
   }
 
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tablet\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .tablet\:grid-cols-fr-3-2 {
+    grid-template-columns: 3fr 2fr;
   }
 
   .tablet\:flex-col {
@@ -1585,6 +1561,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (max-width: 704px) {
+  .ipad\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .ipad\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
+  .ipad\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .ipad\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
+  .ipad\:w-full {
+    width: 100%;
+  }
+
+  .ipad\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ipad\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 639px) {
   .sm\:h-4 {
     height: 1rem;
@@ -1604,12 +1610,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 544px) {
-  .mob\:order-2 {
-    order: 2;
-  }
-
   .mob\:order-1 {
     order: 1;
+  }
+
+  .mob\:order-2 {
+    order: 2;
   }
 
   .mob\:order-4 {
@@ -1628,6 +1634,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 6;
   }
 
+  .mob\:row-start-1 {
+    grid-row-start: 1;
+  }
+
+  .mob\:h-80 {
+    height: 20rem;
+  }
+
+  .mob\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .mob\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1638,6 +1656,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mob\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .mob\:gap-y-12 {
+    row-gap: 3rem;
+  }
+
+  .mob\:p-8 {
+    padding: 2rem;
+  }
+
+  .mob\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mob\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
+  .mob\:pb-16 {
+    padding-bottom: 4rem;
   }
 
   .mob\:text-\[78\%\] {

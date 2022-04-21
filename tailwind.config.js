@@ -31,6 +31,7 @@ module.exports = {
         // grid
         'fr-55-45': '55fr 45fr',
         'fr-2-1': '2fr 1fr',
+        'fr-3-2': '3fr 2fr',
         'footer': '1.5fr 1.5fr 1fr 1fr 1fr',
       }
     },
@@ -47,6 +48,9 @@ module.exports = {
 
       'tablet': { 'max': '850px' },
       // => @media (max-width: 850px) { ... }
+
+      'ipad': { 'max': '704px' },
+      // => @media (max-width: 704px) { ... }
 
       'sm': { 'max': '639px' },
       // => @media (max-width: 639px) { ... }

@@ -1,8 +1,8 @@
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
-const burger = document.querySelector('#burger');
-const menu = document.querySelector('#mobile-menu');
+const burger = document.getElementById("burger");
+const menu = document.getElementById("mobile-menu");
 
 burger.addEventListener("click", () => {
   if (menu.classList.contains("main-mobile-nav--hidden")) {
@@ -11,5 +11,33 @@ burger.addEventListener("click", () => {
     menu.classList.add("main-mobile-nav--hidden");
   }
 });
+
+///////////////////////////////////////////////////////////
+// Sticky navigation
+
+
+const sectionHeroEl = document.getElementById("section-hero");
+
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting === false) {
+      document.getElementById("header").classList.add("sticky")
+    }
+
+    if (ent.isIntersecting === true) {
+      document.getElementById("header").classList.remove("sticky")
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
 
 ///////////////////////////////////////////////////////////

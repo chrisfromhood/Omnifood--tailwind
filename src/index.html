@@ -18,7 +18,7 @@
 </style>
 
 <body class="text-gray font-rubik leading-[1] font-normal text-xl">
-  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8 relative ">
+  <header class="flex justify-between items-center bg-light h-24 py-0 px-12 lg:px-8" id="header">
     <a href="#">
       <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
     </a>
@@ -58,10 +58,10 @@
 
   <main>
     <!--SECTION HERO -->
-    <section class="bg-light pt-12 pb-24">
+    <section class="bg-light pt-12 pb-24 mob:pt-6 mob:px-0 mob:pb-16" id="section-hero">
       <!--HERO GRID -->
       <div
-        class="grid max-w-[1300px] xl:max-w-[1200px] px-8 md:px-20 my-0 mx-auto grid-cols-2 md:grid-cols-1 gap-24 lg:gap-12 md:gap-16 items-center">
+        class="grid max-w-[1300px] xl:max-w-[1200px] px-8 md:px-20 my-0 mx-auto grid-cols-2 md:grid-cols-1 mob:grid-cols-1 gap-24 lg:gap-12 md:gap-16 items-center">
         <!--HERO TEXT BOX -->
         <div class="md:text-center">
           <h1
@@ -106,7 +106,7 @@
             <source srcset="../img/hero.webp" type="image/webp">
             <source srcset="../img/hero-min.png" type="image/png">
 
-            <img src="../img/hero-min.png" class="w-full md:w-[60%] mx-auto"
+            <img src="../img/hero-min.png" class="w-full md:w-[60%] mob:w-[80%] mx-auto"
               alt="Woman enjoying food, meals in storage container, and food bowls on a table">
           </picture>
         </div>
@@ -140,7 +140,8 @@
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">How it works</span>
         <h2 class="heading-secondary ">Your daily dose of health in 3 simple steps</h2>
       </div>
-      <div class="container grid grid-cols-2 mob:grid-cols-1 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16">
+      <div
+        class="container grid grid-cols-2 mob:grid-cols-1 items-center gap-x-16 lg:gap-x-12 gap-y-24 lg:gap-y-16 mob:gap-y-12">
         <!-- STEP 01 -->
 
         <div class="mob:order-1">
@@ -204,7 +205,7 @@
         <h2 class="heading-secondary ">Omnifood AI chooses from 5,000+ recipes</h2>
       </div>
       <div
-        class="container grid grid-cols-3 tablet:grid-cols-2 sm:grid-cols-1 gap-y-16 gap-x-24 lg:gap-x-16 md:gap-x-12 mb-12">
+        class="container grid grid-cols-3 tablet:grid-cols-2 mob:grid-cols-1 gap-y-16 gap-x-24 lg:gap-x-16 md:gap-x-12 mb-12">
         <!--CARD 1 -->
         <div class="shadow-md rounded-xl overflow-hidden transition-all hover:-translate-y-3">
           <img class="w-full" src="../img/meals/meal-1.jpg" alt="Japanese Gyozas">
@@ -315,7 +316,7 @@
     </section>
 
     <!--SECTION TESTIMONIALS -->
-    <section class="bg-light grid grid-cols-fr-55-45 md:grid-cols-1 items-center">
+    <section class="bg-light grid grid-cols-fr-55-45 tablet:grid-cols-1 items-center">
       <div class="p-24 lg:px-8">
         <span class="block text-base font-medium text-secondary uppercase mb-4 tracking-[0.75px]">Testimonials</span>
         <h2 class="heading-secondary ">Once you try it, you can't go back</h2>
@@ -411,9 +412,9 @@
         <h2 class="heading-secondary ">Eating well without breaking the bank</h2>
       </div>
 
-      <div class="container grid grid-cols-2 gap-x-16 gap-y-24 mb-12">
+      <div class="container grid grid-cols-2 mob:grid-cols-1 gap-x-16 gap-y-24 mob:gap-y-12 mb-12">
         <!--PRICING PLAN STARTER-->
-        <div class="justify-self-end border-2 border-solid border-light p-12 rounded-xl w-[75%]">
+        <div class="justify-self-end border-2 border-solid border-light p-12 rounded-xl w-[75%] ipad:w-full">
 
           <header class="text-center mb-12">
             <p class="text-primary font-semibold text-xl uppercase tracking-[0.75] mb-8">Starter</p>
@@ -445,7 +446,7 @@
         </div>
 
         <!--PRICING COMPLETE -->
-        <div class="bg-light p-12 rounded-xl w-[75%] relative overflow-hidden">
+        <div class="bg-light p-12 rounded-xl w-[75%] ipad:w-full relative overflow-hidden">
           <div
             class="absolute top-[6%] right-[-18%] uppercase text-sm font-bold text-dark bg-yelow-one py-2 px-20 rotate-45">
             Best value</div>
@@ -489,7 +490,7 @@
       </div>
 
       <div class="container">
-        <div class="grid grid-cols-4 gap-x-16 gap-y-24">
+        <div class="grid grid-cols-4 ipad:grid-cols-2 mob:grid-cols-1 gap-x-16 gap-y-24 mob:gap-y-12">
           <div>
             <ion-icon class="h-8 w-8 text-primary bg-light p-4 rounded-[50%] mb-8" name="infinite"></ion-icon>
             <p class="text-2xl text-dark font-bold mb-4">Never cook again!</p>
@@ -522,15 +523,16 @@
     <!--SECTION CTA-->
     <section class="pt-12 pb-32 py-0 ">
       <div class="container">
-        <div class="grid grid-cols-fr-2-1 bg-form-linear rounded-xl overflow-hidden">
+        <div
+          class="grid grid-cols-fr-2-1 tablet:grid-cols-fr-3-2 mob:grid-cols-1 bg-form-linear rounded-xl overflow-hidden">
           <!--TEXT-BOX-->
-          <div class="p-16 pt-12 text-brown">
+          <div class="p-16 pt-12 mob:p-8 text-brown">
             <h2 class="heading-secondary mb-6">Get your first meal for free!</h2>
             <p class="text-lg leading-[1.8] mb-12">Healthy, tasty and hassle-free meals are waiting for you. Start
               eating well today. You can cancel or pause anytime. And the
               first meal is on us!</p>
             <!--FORM-->
-            <form class="grid grid-cols-2 gap-x-8 gap-y-6">
+            <form class="grid grid-cols-2 tablet:grid-cols-1 gap-x-8 gap-y-6">
               <div>
                 <label class="block text-base font-medium mb-3" for="full-name">Full Name</label>
                 <input class="w-full p-3 text-lg border-none bg-light rounded-lg " type="text" placeholder="John Smith"
@@ -553,11 +555,12 @@
                   <option value="others">Others</option>
                 </select>
               </div>
-              <button class="btn bg-brown text-light self-end p-3">Sign up now</button>
+              <button class="btn bg-brown text-light self-end p-3 tablet:mt-3">Sign up now</button>
             </form>
           </div>
           <!--IMG-BOX-->
-          <div class="bg-img-box bg-cover bg-center" role="img" aria-label="Woman enjoying food"></div>
+          <div class="bg-img-box bg-cover bg-center mob:h-80 mob:row-start-1" role="img"
+            aria-label="Woman enjoying food"></div>
         </div>
       </div>
     </section>
@@ -566,9 +569,9 @@
 
   <footer class="py-32 px-0 border border-solid border-[#eee]">
     <div class="container">
-      <div class="grid grid-cols-footer gap-x-16 gap-y-24">
+      <div class="grid grid-cols-footer ipad:grid-cols-6 gap-x-16 gap-y-24 mob:gap-y-12">
         <!--LOGO COLUMN FOOTER-->
-        <div class="flex flex-col">
+        <div class="flex flex-col ipad:col-span-3">
           <a class="block mb-8" href="#">
             <img class="h-[22px]" src="../img/omnifood-logo.png" alt="Omnifood logo">
           </a>
@@ -598,7 +601,7 @@
           </p>
         </div>
         <!--CONTACT US COLUMN FOOTER-->
-        <div>
+        <div class="ipad:col-span-3">
           <p class="footer-heading">Contact Us</p>
           <address class="not-italic text-base leading-[1.6]">
             <p class="mb-6">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
@@ -610,7 +613,7 @@
           </address>
         </div>
         <!--ACCOUNT FOOTER-->
-        <nav>
+        <nav class="ipad:col-span-2 ipad:row-start-1 ipad:mb-8">
           <p class="footer-heading">Account</p>
           <ul class="flex flex-col gap-6 no-underline ">
             <li>
@@ -628,7 +631,7 @@
           </ul>
         </nav>
         <!--COMPANY FOOTER-->
-        <nav>
+        <nav class="ipad:col-span-2 ipad:row-start-1 ipad:mb-8">
           <p class="footer-heading">Company</p>
           <ul class="flex flex-col gap-6 no-underline ">
             <li>
@@ -646,7 +649,7 @@
           </ul>
         </nav>
         <!--RESOURCES FOOTER-->
-        <nav>
+        <nav class="ipad:col-span-2 ipad:row-start-1 ipad:mb-8">
           <p class="footer-heading">Resources</p>
           <ul class="flex flex-col gap-6 no-underline ">
             <li>
