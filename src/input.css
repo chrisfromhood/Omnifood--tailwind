@@ -24,8 +24,12 @@
     @apply no-underline text-base text-[#767676] transition-all;
   }
 
-  .step-img-box {
-    @apply before:absolute before:w-[60%] before:h-[60%] before:pb-[60%] before:bg-light -z-10 before:content-none before:block before:rounded-[50%] before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%];
+  .step-img-box__before {
+    @apply before:absolute before:w-[60%] before:h-[60%] before:pb-[60%] before:bg-light before:-z-[-2] before:content-none before:block before:rounded-[50%] before:top-1/2 before:left-1/2 before:translate-x-[-50%] before:translate-y-[-50%];
+  }
+
+  .step-img-box__after {
+    @apply after:-z-[1] after:bg-tertiary after:pb-[45%] after:w-[45%] after:absolute after:content-none after:block after:rounded-[50%] after:top-1/2 after:left-1/2 after:translate-x-[-50%] after:translate-y-[-50%];
   }
 
   .sticky {
