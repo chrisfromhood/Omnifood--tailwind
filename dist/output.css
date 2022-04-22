@@ -645,10 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -18%;
 }
 
-.z-\[-1\] {
-  z-index: -1;
-}
-
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -797,10 +793,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-8 {
   width: 2rem;
-}
-
-.w-\[45\%\] {
-  width: 45%;
 }
 
 .max-w-\[1300px\] {
@@ -1162,10 +1154,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 8rem;
 }
 
-.pb-\[45\%\] {
-  padding-bottom: 45%;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1447,6 +1435,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.after\:top-1\/2::after {
+  content: var(--tw-content);
+  top: 50%;
+}
+
+.after\:left-1\/2::after {
+  content: var(--tw-content);
+  left: 50%;
+}
+
 .after\:z-\[-1\]::after {
   content: var(--tw-content);
   z-index: -1;
@@ -1490,13 +1488,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 45%;
 }
 
-.after\:content-\[\'1\'\]::after {
-  --tw-content: '1';
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
   content: var(--tw-content);
 }
 
-.after\:content-\[\'\'\]::after {
-  --tw-content: '';
+.after\:content-none::after {
+  --tw-content: none;
   content: var(--tw-content);
 }
 
@@ -1747,10 +1745,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 1;
   }
 
-  .mob\:order-2 {
-    order: 2;
-  }
-
   .mob\:order-4 {
     order: 4;
   }
@@ -1761,10 +1755,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .mob\:order-5 {
     order: 5;
-  }
-
-  .mob\:order-6 {
-    order: 6;
   }
 
   .mob\:row-start-1 {

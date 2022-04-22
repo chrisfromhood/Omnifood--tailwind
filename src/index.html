@@ -28,43 +28,6 @@
     z-index: 999;
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
   }
-
-  .step-img-box {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .step-img-box::before,
-  .step-img-box::after {
-    content: "";
-    display: block;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  .step-img-box::before {
-    width: 60%;
-    /* height: 60%; */
-
-    /* 60% of parent's width */
-    padding-bottom: 60%;
-
-    background-color: #fdf2e9;
-    z-index: -2;
-  }
-
-  .step-img-box::after {
-    width: 45%;
-    padding-bottom: 45%;
-    background-color: #fae5d3;
-    z-index: -1;
-  }
 </style>
 
 <body class="text-gray font-rubik leading-[1] font-normal text-xl">
@@ -240,7 +203,7 @@
             </p>
           </div>
           <div
-            class="flex items-center justify-center mob:order-4 relative after:content-[''] after:block after:rounded-[50%] after:absolute after:top-[50%] after:left-[50%] after:translate-y-[-50%] after:translate-x-[-50%] after:w-[45%] after:pb-[45%] after:bg-tertiary after:z-[-1] before:content-[''] before:block before:rounded-[50%] before:absolute before:top-[50%] before:left-[50%] before:translate-y-[-50%] before:translate-x-[-50%] before:w-[60%] before:pb-[60%] before:bg-light before:z-[-2]">
+            class="flex items-center justify-center mob:order-4 relative after:content-[''] after:block after:rounded-[50%] after:absolute after:top-1/2 after:left-1/2 after:translate-y-[-50%] after:translate-x-[-50%] after:w-[45%] after:pb-[45%] after:bg-tertiary after:z-[-1] before:content-[''] before:block before:rounded-[50%] before:absolute before:top-[50%] before:left-[50%] before:translate-y-[-50%] before:translate-x-[-50%] before:w-[60%] before:pb-[60%] before:bg-light before:z-[-2]">
             <img class="w-[35%] step-img-box__before step-img-box__after" src="../img/app/app-screen-1.png"
               alt="iPhone app">
           </div>
