@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+// Remove all these apply statements!!!!!!!!!!!!!!!!
 @layer components {
   .btn {
     @apply inline-block no-underline text-xl leading-[1] py-4 mob:py-6 px-8 mob:px-4 font-semibold rounded-lg border-none cursor-pointer transition-all;
